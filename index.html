@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals - Samuel Moraes - A course covering HTML, CSS, JavaScript, and web development fundamentals">
+    <meta name="author" content="Samuel Moraes">
+    <title>WDD 131 – Dynamic Web Fundamentals – Samuel Moraes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+            <nav>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/samuel-moraes-46a837161" target="_blank">LinkedIn</a></li>
+                    <li><a href="https://byupw.instructure.com/" target="_blank">Canvas</a></li>
+                    <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/ether/3?lang=eng&id=p3-p4#p3" target="_blank">Scripture</a></li>
+                    <li><a href="project/index.html" target="_blank">Final Project</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <h1>Samuel Moraes</h1>
+
+        <div class="card-container">
+            <section class="card">
+                <h2>About Me</h2>
+                <div class="card-content">
+                    <div class="text-content">
+                        <p>Hello! My name is Samuel Moraes and I'm a web development student. I'm passionate about creating clean, functional websites that provide great user experiences. When I'm not coding, I enjoy playing the cello, cooking, and reading.</p>
+                        <p>I'm currently based in Porto Alegre, Brazil, and I'm excited to continue learning about web technologies and improving my skills in this course.</p>
+                    </div>
+                    <div class="image-content">
+                        <img src="images/profile.jpeg" alt="Samuel Moraes profile picture">
+                    </div>
+                </div>
+            </section>
+            
+            <section class="card">
+                <h2>Web Dev Resources</h2>
+                <div class="card-content">
+                    <div class="text-content">
+                        <p>Here are some of my favorite resources for web development:</p>
+                        <ul>
+                            <li><a href="https://developer.mozilla.org/" target="_blank">MDN Web Docs</a></li>
+                            <li><a href="https://www.w3schools.com/" target="_blank">W3Schools</a></li>
+                            <li><a href="https://css-tricks.com/" target="_blank">CSS-Tricks</a></li>
+                            <li><a href="https://stackoverflow.com/" target="_blank">Stack Overflow</a></li>
+                        </ul>
+                    </div>
+                    <div class="image-content">
+                        <img src="images/web-dev.jpg" alt="Web development illustration">
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy; <span id="currentYear"></span> | Samuel Moraes | Porto Alegre, Brazil</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
