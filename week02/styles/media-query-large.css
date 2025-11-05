@@ -1,0 +1,28 @@
+/* Media query for screens 500px and larger */
+@media screen and (min-width: 500px) {
+    
+    /* Header styling for larger screens */
+    header {
+        background-color: #000;
+        color: #fff;
+    }
+    
+    header h1 {
+        color: #fff;
+    }
+    
+    /* Main grid layout for larger screens */
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    /* Optional: Enhance section styling for larger screens */
+    section {
+        transition: transform 0.2s ease;
+    }
+    
+    section:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    }
+}
