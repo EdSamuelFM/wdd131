@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porto Alegre, Brazil - WDD131 Project</title>
+    <meta name="description" content="Explore Porto Alegre, Brazil - its culture, landmarks, and weather">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Porto Alegre, Brazil</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#attractions">Attractions</a></li>
+                <li><a href="#weather">Weather</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <picture>
+                <source srcset="images/orla-small.webp" media="(max-width: 500px)">
+                <source srcset="images/orla-medium.webp" media="(max-width: 1000px)">
+                <img src="images/orla.webp" alt="Porto Alegre skyline with Guaíba River" width="960" height="400">
+            </picture>
+        </section>
+
+        <section id="about" class="content-section">
+            <h2>About Porto Alegre</h2>
+            <div class="content-grid">
+                <div class="text-content">
+                    <p>Porto Alegre is the capital city of Rio Grande do Sul, the southernmost state in Brazil. With a population of over 1.4 million people, it's known for its high quality of life, cultural richness, and being a major educational and political center.</p>
+                    <p>The city is located at the junction of five rivers, forming the Guaíba River, which widens into a vast waterway. Porto Alegre has a rich cultural scene with numerous theaters, museums, and galleries, and is famous for its traditional gaúcho culture.</p>
+                </div>
+                <div class="facts">
+                    <h3>Quick Facts</h3>
+                    <ul>
+                        <li><strong>Population:</strong> 1.4 million</li>
+                        <li><strong>Area:</strong> 496.8 km²</li>
+                        <li><strong>Founded:</strong> 1772</li>
+                        <li><strong>Time Zone:</strong> BRT (UTC-3)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="attractions" class="content-section">
+            <h2>Top Attractions</h2>
+            <div class="attractions-grid">
+                <div class="attraction">
+                    <h3>Public Market</h3>
+                    <p>The historic Mercado Público is a cultural landmark offering local foods, crafts, and traditional restaurants.</p>
+                </div>
+                <div class="attraction">
+                    <h3>Guaíba Riverfront</h3>
+                    <p>The Orla do Guaíba offers stunning sunset views and recreational spaces along the city's waterfront.</p>
+                </div>
+                <div class="attraction">
+                    <h3>Farroupilha Park</h3>
+                    <p>Also known as Redenção, this is the city's most popular park with trails, lakes, and cultural events.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="weather" class="content-section">
+            <h2>Weather</h2>
+            <div class="weather-info">
+                <div class="current-weather">
+                    <div class="weather-icon">
+                        <!-- SVG for mobile view -->
+                        <svg width="50" height="50" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="mobile-icon">
+                            <path d="M6 12C6 8.68629 8.68629 6 12 6C15.3137 6 18 8.68629 18 12C18 15.3137 15.3137 18 12 18C8.68629 18 6 15.3137 6 12Z" stroke="currentColor" stroke-width="2"/>
+                            <path d="M12 2V4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M12 20V22" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M4 12H2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M22 12H20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M19.071 19.071L17.657 17.657" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M6.343 6.343L4.929 4.929" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M19.071 4.929L17.657 6.343" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M6.343 17.657L4.929 19.071" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        <!-- Emoji for desktop view -->
+                        <span class="desktop-icon">⛅</span>
+                    </div>
+                    <div class="weather-details">
+                        <p><strong>Condition:</strong> Partly Cloudy</p>
+                        <p><strong>Temperature:</strong> <span id="temperature">22</span>°C</p>
+                        <p><strong>Wind Speed:</strong> <span id="wind-speed">15</span> km/h</p>
+                        <p><strong>Wind Chill:</strong> <span id="wind-chill">N/A</span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> | Porto Alegre Tourism</p>
+        <p>Last Modified: <span id="last-modified"></span></p>
+    </footer>
+</body>
+</html>
