@@ -1,0 +1,41 @@
+/* Larger screen styles */
+@media (min-width: 768px) {
+    .hamburger {
+        display: none;
+    }
+
+    .nav-menu {
+        display: flex;
+        position: static;
+        flex-direction: row;
+        width: auto;
+        gap: 0;
+    }
+
+    .nav-menu li {
+        width: auto;
+    }
+
+    .nav-menu a {
+        padding: 0.5rem 1rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .temple-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}
+
+/* Additional large screen enhancements */
+@media (min-width: 1024px) {
+    .temple-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    main {
+        padding: 0 2rem;
+    }
+}
