@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Gallery - Worldwide Temples</title>
+    <meta name="description" content="A gallery of LDS temples from around the world with filtering capabilities">
+    <meta name="author" content="Edson Samuel Fernandes de Moraes">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css" media="(min-width: 768px)">
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Temple Gallery</h1>
+            <button class="hamburger" aria-label="Toggle navigation">☰</button>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="#" data-filter="home">Home</a></li>
+                    <li><a href="#" data-filter="old">Old</a></li>
+                    <li><a href="#" data-filter="new">New</a></li>
+                    <li><a href="#" data-filter="large">Large</a></li>
+                    <li><a href="#" data-filter="small">Small</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h2>Worldwide Temples</h2>
+        <div class="temple-grid" id="templeGrid">
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Edson Samuel Fernandes de Moraes | Brazil</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
