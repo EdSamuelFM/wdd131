@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Printing Project Site Plan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --color-primary: #0096C7; 
+            --color-secondary: #4A4A4A; 
+            --color-background: #F8F8F8; 
+            --font-heading: 'Montserrat', sans-serif;
+            --font-body: 'Roboto Slab', serif;
+        }
+
+        body {
+            font-family: var(--font-body);
+            background-color: var(--color-background);
+            color: var(--color-secondary);
+            margin: 0 auto;
+            max-width: 1000px;
+            padding: 20px;
+        }
+
+        h1, h2, h3 {
+            font-family: var(--font-heading);
+            color: var(--color-primary);
+            border-bottom: 2px solid var(--color-primary);
+            padding-bottom: 5px;
+            margin-top: 20px;
+        }
+        
+        .section-box {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Site Plan: 3D Printing Fundamentals</h1>
+    <hr>
+    
+    <h2>1. Site Identity</h2>
+    <div class="section-box">
+        <h3>Site Name: Additive Insights</h3>
+        <p>This name combines <strong>Additive</strong> (referring to Additive Manufacturing, the formal term for 3D printing) and <strong>Insights</strong> (reflecting the site's purpose as a source of knowledge and detailed information).</p>
+        <ul>
+            <li><strong>Proposed Domain:</strong> <code>additiveinsights.org</code></li>
+            <li><strong>Logo Concept:</strong> A simple, stylized icon of a 3D printer nozzle tip tracing a clean geometric shape.</li>
+        </ul>
+    </div>
+    
+    <h2>2. Site Purpose and Target Audience</h2>
+    <div class="section-box">
+        <h3>Site Purpose</h3>
+        <p>The primary purpose of this site is to serve as an <strong>informational hub and resource for beginners</strong> interested in Fused Deposition Modeling (FDM) 3D printing. The site will provide structured information to help users:</p>
+        <ol>
+            <li>Understand fundamental concepts and terminology.</li>
+            <li>Compare common filament materials (PLA, ABS, PETG).</li>
+            <li>Utilize a dynamic tool for estimating print time and material usage.</li>
+        </ol>
+        
+        <h3>Target Audience</h3>
+        <p>Individuals who have recently purchased a consumer-level FDM 3D printer or those considering buying one. They are looking for clear, reliable, non-overwhelming information to start their journey.</p>
+    </div>
+
+    <h2>3. Scenarios (Driving Content)</h2>
+    <div class="section-box">
+        <p>Scenarios represent the questions a target visitor would ask:</p>
+        <ol>
+            <li><strong>"I just bought a spool of PLA. What are the best nozzle and bed temperatures I should use, and what are the pros and cons compared to PETG?"</strong> <em>(Drives the Materials Page and JS filtering)</em></li>
+            <li><strong>"I have a model file, but I don't know how long it will take to print or how much filament it will use. Can this site help me estimate that?"</strong> <em>(Drives the dynamic HTML Form/Calculator)</em></li>
+        </ol>
+    </div>
+
+    <h2>4. Design Elements</h2>
+    <div class="section-box">
+        <h3>Color Schema</h3>
+        <table>
+            <thead>
+                <tr><th>Color</th><th>Hex Code</th><th>Usage</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>Primary/Accent</td><td>#0096C7 (Rich Blue)</td><td>Headings, Buttons, Links, Borders.</td></tr>
+                <tr><td>Secondary/Text</td><td>#4A4A4A (Dark Gray)</td><td>Body Text, Footers, Form Labels.</td></tr>
+                <tr><td>Background/Base</td><td>#F8F8F8 (Off-White)</td><td>Main Page Background.</td></tr>
+                <tr><td>Call to Action (CTA)</td><td>#F08080 (Light Coral)</td><td>Form Submission Buttons.</td></tr>
+            </tbody>
+        </table>
+
+        <h3>Typography</h3>
+        <table>
+            <thead>
+                <tr><th>Font</th><th>Style</th><th>Usage</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>'Montserrat'</td><td>Sans-serif</td><td>Headings, Navigation.</td></tr>
+                <tr><td>'Roboto Slab'</td><td>Serif</td><td>Body Text, Paragraphs, Lists.</td></tr>
+                <tr><td>'Fira Mono'</td><td>Monospace</td><td>Technical Data, Code.</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h2>5. Wireframes (Home Page Layout)</h2>
+    <div class="section-box">
+        <p>The home page will focus on a clean layout for easy access to the main sections (Fundamentals, Materials, Calculator).</p>
+        
+        <h3>Mobile View (Single Column)</h3>
+        <p></p>
+        
+        <h3>Larger View (Desktop)</h3>
+        <p></p>
+    </div>
+</body>
+</html>
