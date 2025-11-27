@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Review Form</title>
-    <meta name="description" content="Leave a review for our products.">
+    <meta name="description"
+        content="Share your feedback on our products with this comprehensive review form. Your input helps us improve quality and user experience.">
     <link rel="stylesheet" href="styles/form.css">
     <script src="scripts/form.js" defer></script>
+    <meta name="author" content="Edson Samuel Fernandes de Moraes">
 </head>
+
 <body>
     <header>
         <h1>Product Reviews Form</h1>
@@ -15,8 +19,8 @@
 
     <main>
         <form method="get" action="review.html">
-            <h1>Product Review</h1>
-            
+            <h2>Product Review</h2>
+
             <div class="form-group">
                 <label for="productName">Product Name</label>
                 <select id="productName" name="productName" required>
@@ -27,11 +31,16 @@
             <fieldset class="form-group">
                 <legend>Overall Rating</legend>
                 <div class="star-rating">
-                    <input type="radio" id="star5" name="rating" value="5" required><label for="star5" title="5 stars"></label>
-                    <input type="radio" id="star4" name="rating" value="4"><label for="star4" title="4 stars"></label>
-                    <input type="radio" id="star3" name="rating" value="3"><label for="star3" title="3 stars"></label>
-                    <input type="radio" id="star2" name="rating" value="2"><label for="star2" title="2 stars"></label>
-                    <input type="radio" id="star1" name="rating" value="1"><label for="star1" title="1 star"></label>
+                    <input type="radio" id="star5" name="rating" value="5" required><label for="star5"
+                        title="5 stars"></label>
+                    <input type="radio" id="star4" name="rating" value="4" required><label for="star4"
+                        title="4 stars"></label>
+                    <input type="radio" id="star3" name="rating" value="3" required><label for="star3"
+                        title="3 stars"></label>
+                    <input type="radio" id="star2" name="rating" value="2" required><label for="star2"
+                        title="2 stars"></label>
+                    <input type="radio" id="star1" name="rating" value="1" required><label for="star1"
+                        title="1 star"></label>
                 </div>
             </fieldset>
 
@@ -43,17 +52,17 @@
             <fieldset class="form-group">
                 <legend>Useful Features (Check all that apply)</legend>
                 <div class="checkbox-group">
-                    <label class="checkbox-label">
-                        <input type="checkbox" name="features" value="durability"> Durability
+                    <label class="checkbox-label" for="durability">
+                        <input type="checkbox" id="durability" name="features" value="durability"> Durability
                     </label>
-                    <label class="checkbox-label">
-                        <input type="checkbox" name="features" value="easeOfUse"> Ease of Use
+                    <label class="checkbox-label" for="easeOfUse">
+                        <input type="checkbox" id="easeOfUse" name="features" value="easeOfUse"> Ease of Use
                     </label>
-                    <label class="checkbox-label">
-                        <input type="checkbox" name="features" value="performance"> Performance
+                    <label class="checkbox-label" for="performance">
+                        <input type="checkbox" id="performance" name="features" value="performance"> Performance
                     </label>
-                    <label class="checkbox-label">
-                        <input type="checkbox" name="features" value="design"> Design
+                    <label class="checkbox-label" for="design">
+                        <input type="checkbox" id="design" name="features" value="design"> Design
                     </label>
                 </div>
             </fieldset>
@@ -72,10 +81,10 @@
         </form>
     </main>
 
-     <footer>
+    <footer>
         <p>&copy; <span id="currentyear"></span> | Edson Samuel Fernandes de Moraes</p>
         <p id="lastModified"></p>
     </footer>
 </body>
-</html>
 
+</html>
