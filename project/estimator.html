@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Additive Insights | Print Time Estimator</title>
+    <meta name="description" content="Calculate estimated print time and material cost for your 3D models.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto+Slab&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">Additive Insights</div>
+        <nav>
+            <button id="menu-toggle" aria-expanded="false" aria-controls="main-menu">☰</button>
+            <ul id="main-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="materials.html">Materials</a></li>
+                <li><a href="estimator.html" class="active">Estimator</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="form-container">
+        <h1>Print Time & Cost Estimator</h1>
+        <p>Planning your print requires knowing how long it will take and how much filament it will consume. Use this tool for a <strong>quick and functional estimate</strong> by providing key model and material data from your slicer software.</p>
+        
+        <p class="small-note">The filament density is assumed to be 1.24 g/cm³ (standard PLA). The speed adjustment is based on your chosen <strong>Print Quality</strong> setting, which simulates different layer heights and speeds.</p>
+
+        <form id="estimator-form">
+            <fieldset>
+                <legend>Model Details</legend>
+
+                <label for="volume">Model Volume (cm³):</label>
+                <input type="number" id="volume" name="volume" required min="1" step="0.01" placeholder="e.g., 50.5">
+                
+                <label for="cost">Filament Cost ($/kg):</label>
+                <input type="number" id="cost" name="cost" required min="10" step="1" placeholder="e.g., 20">
+
+                <label for="infill">Infill Density (%):</label>
+                <input type="range" id="infill" name="infill" min="5" max="100" step="5" value="20">
+                <span id="infill-value">20%</span>
+                <p class="small-note">Higher infill percentage uses more material and increases print time, but results in a <strong>stronger final part</strong>.</p>
+                
+                <label for="quality">Print Quality/Speed:</label>
+                <select id="quality" name="quality" required>
+                    <option value="Draft">Draft (Fast - High Layer Height)</option>
+                    <option value="Standard" selected>Standard (Recommended)</option>
+                    <option value="High">High (Slow - Low Layer Height)</option>
+                </select>
+
+                <button type="submit">Calculate Estimate</button>
+            </fieldset>
+        </form>
+        
+        <div id="result-output" class="result-box" aria-live="polite">
+            <p>Your estimation results will appear here after calculation.</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Additive Insights. Last Modified: <span id="lastmodified"></span></p>
+        <p><a href="references.html">Content References</a></p>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="js/estimator.js"></script>
+</body>
+</html>

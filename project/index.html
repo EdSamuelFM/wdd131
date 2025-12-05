@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Additive Insights | A Beginner's Guide to 3D Printing</title>
+    <meta name="description" content="Start your 3D printing journey with essential guides and fundamental terminology.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto+Slab&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">Additive Insights</div>
+        <nav>
+            <button id="menu-toggle" aria-expanded="false" aria-controls="main-menu">☰</button>
+            <ul id="main-menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="materials.html">Materials</a></li>
+                <li><a href="estimator.html">Estimator</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Welcome to the World of 3D Printing</h1>
+            <p>Start your journey into <strong>Additive Manufacturing (FDM)</strong> with clear, practical guidance. We cover the core concepts, help you choose materials, and provide tools to estimate your projects.</p>
+        </section>
+
+        <section class="fundamentals-grid">
+            <article>
+                <h2>What is FDM Printing?</h2>
+                <p>Fused Deposition Modeling (FDM) is the most common and accessible 3D printing technology. It works by heating and extruding <strong>thermoplastic filament</strong>, which is deposited layer by layer onto a build platform to construct a physical object from the ground up. The process is precise but requires careful calibration to ensure successful prints.</p>
+            </article>
+            <article>
+                <h2>Understanding Slicer Software</h2>
+                <p>Before your printer can move, you need a <strong>Slicer</strong>. This software (like Cura or PrusaSlicer) takes a digital 3D model (usually an STL file) and "slices" it into hundreds or thousands of <strong>layers</strong>. It generates the machine code (<strong>G-Code</strong>) that tells your printer exactly where, when, and how fast to move the extruder and the print bed. Learning your slicer is the first, most critical step.</p>
+            </article>
+            <article>
+                <h2>The Importance of Bed Leveling</h2>
+                <p>For a successful print, the distance between the <strong>nozzle</strong> and the <strong>print bed</strong> must be consistent across the entire bed. This process is called <strong>bed leveling</strong>. If the nozzle is too close, it scrapes; if it's too far, the plastic won't adhere—resulting in print failure. Always check your leveling before a major print!</p>
+            </article>
+            <article>
+                <h2>Key Terminology</h2>
+                <ul>
+                    <li><strong>Layer Height:</strong> The thickness of each layer, measured in millimeters (e.g., 0.2mm). Thinner layers mean better detail but longer print times.</li>
+                    <li><strong>Infill:</strong> The internal structure of the model, usually a grid or honeycomb pattern, measured in percentage (e.g., 20%). Affects strength and material usage.</li>
+                    <li><strong>Retraction:</strong> The printer temporarily pulling the filament backward to prevent oozing when the nozzle moves between non-printing areas.</li>
+                </ul>
+            </article>
+            <article>
+                <h2>Essential Calibration: E-Steps</h2>
+                <p>The E-Steps (Extruder Steps per Millimeter) tell your printer how much motor rotation is needed to push exactly 10mm of filament. If your E-Steps are incorrect, you will experience either <strong>under-extrusion</strong> (gaps in layers) or <strong>over-extrusion</strong> (blobs and excessive material). Calibrating your E-Steps is crucial for achieving accurate dimensions and strong layers.</p>
+            </article>
+            <article>
+                <h2>Solving Adhesion Issues</h2>
+                <p>The first layer must stick firmly to the bed. Common adhesion solutions include: <strong>cleaning the bed</strong> thoroughly with isopropyl alcohol; using a thin layer of <strong>PVA glue stick</strong> for standard filaments like PLA; or applying a specialty spray for materials that tend to warp, such as ABS. A warped first layer, or "lifting," is a common sign of poor adhesion or uneven heating.</p>
+            </article>
+        </section>
+
+        <section class="gallery">
+            <h2>Explore Possibilities</h2>
+            <figure>
+                <img src="images/cube.webp" alt="A perfectly printed calibration cube model, showcasing dimensional accuracy." loading="lazy" width="400" height="300">
+                <figcaption>Precision Cube: Essential for calibrating your machine.</figcaption>
+            </figure>
+            <figure>
+                <img src="images/Materials.webp" alt="Different kinds of filament spools in various colors." loading="lazy" width="400" height="300">
+                <figcaption>Quality Filament: The raw material of your creations.</figcaption>
+            </figure>
+            <figure>
+                <img src="images/articulated.webp" alt="Some examples of articulated models, demonstrating complex moving parts." loading="lazy" width="400" height="300">
+                <figcaption>Articulated Model: Possible with well-tuned settings.</figcaption>
+            </figure>
+            <figure>
+                <img src="images/first_layer.webp" alt="Different qualities of first layer adhesion in 3D printing." loading="lazy" width="400" height="300">
+                <figcaption>First Layer: Where success begins or ends.</figcaption>
+            </figure>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Additive Insights. Last Modified: <span id="lastmodified"></span></p>
+        <p><a href="references.html">Content References</a></p>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

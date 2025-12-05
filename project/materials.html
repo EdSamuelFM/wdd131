@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Additive Insights | Filament Materials</title>
+    <meta name="description" content="Compare popular 3D printing filaments by strength, ease of use, and cost.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto+Slab&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">Additive Insights</div>
+        <nav>
+            <button id="menu-toggle" aria-expanded="false" aria-controls="main-menu">☰</button>
+            <ul id="main-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="materials.html" class="active">Materials</a></li>
+                <li><a href="estimator.html">Estimator</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="content-grid">
+        <section class="sidebar">
+            <h2>Filter Materials</h2>
+            <p>Filter the table below by your minimum required filament properties.</p>
+            <form id="filter-form">
+                <fieldset>
+                    <legend>Material Criteria</legend>
+                    <label for="strength">Minimum Strength:</label>
+                    <select id="strength" name="strength">
+                        <option value="All">All Strengths</option>
+                        <option value="High">High</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Low">Low</option>
+                    </select>
+
+                    <label for="ease">Ease of Printing:</label>
+                    <select id="ease" name="ease">
+                        <option value="All">All</option>
+                        <option value="Easy">Easy</option>
+                        <option value="Moderate">Moderate</option>
+                        <option value="Difficult">Difficult</option>
+                    </select>
+                </fieldset>
+            </form>
+            <p class="small-note">Selection is saved via localStorage.</p>
+        </section>
+
+        <section class="main-content">
+            <h1>Filament Comparison: Choosing Your Material</h1>
+            <p>The filament you choose dictates the final properties of your print, including its <strong>strength, temperature resistance, and flexibility</strong>. Most beginners start with <strong>PLA</strong> due to its ease of use, but specialized materials like <strong>PETG</strong> and <strong>ABS</strong> offer much higher performance for functional parts.</p>
+            
+            <p id="local-storage-message"></p>
+            
+            <table id="material-table">
+                <caption>Comparison of Common FDM Filaments</caption>
+                <thead>
+                    <tr>
+                        <th>Material</th>
+                        <th>Strength</th>
+                        <th>Ease of Use</th>
+                        <th>Nozzle Temp (°C)</th>
+                        <th>Bed Temp (°C)</th>
+                        <th>Cost ($/kg)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    </tbody>
+            </table>
+
+            <h2>Material Notes:</h2>
+            <p><strong>PLA (Polylactic Acid):</strong> Best for visual models and prototyping. Requires the lowest temperatures (minimal warping) and is derived from renewable resources, making it low-fume. <strong>Always use a cooling fan</strong> to ensure crisp details.</p>
+            <p><strong>PETG (Polyethylene Terephthalate Glycol):</strong> A popular bridge between PLA and ABS. Offers high strength, good temperature resistance, and minimal odor. It tends to be sticky and requires careful <strong>Z-height calibration</strong> to prevent print blobs (stringing).</p>
+            <p><strong>ABS (Acrylonitrile Butadiene Styrene):</strong> Very strong, durable, and highly temperature resistant. Requires an <strong>enclosure</strong> and higher temperatures to prevent warping and cracking. Always print in a well-ventilated area due to strong fumes.</p>
+            <p><strong>TPU (Thermoplastic Polyurethane):</strong> Known for its flexibility. Print speeds must be <strong>significantly reduced</strong> (15-30 mm/s) due to the soft nature of the material, and a direct drive extruder is highly recommended over bowden setups.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Additive Insights. Last Modified: <span id="lastmodified"></span></p>
+        <p><a href="references.html">Content References</a></p>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="js/materials.js"></script>
+</body>
+</html>
